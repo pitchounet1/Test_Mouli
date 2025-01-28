@@ -1,11 +1,4 @@
 pipeline {
-    agent {
-        docker {
-            image 'epitech/epitech-docker'  // Utiliser l'image Docker d'Epitech
-            args '-v /workspace:/workspace'  // Monter un volume pour les fichiers du projet
-        }
-    }
-
     environment {
         CC = 'gcc'  // Utiliser GCC comme compilateur
         CFLAGS = '-Wall -Wextra -Werror'  // Options de compilation
